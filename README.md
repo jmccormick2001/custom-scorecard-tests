@@ -28,3 +28,8 @@ config.yaml entries:
     suite: custom
     test: customtest2
 ```
+
+## Example Execution Command
+
+The *command-example* script shows how to run the
+custom scorecard test using operator-sdk alpha scorecard.

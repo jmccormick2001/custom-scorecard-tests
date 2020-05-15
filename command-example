@@ -1,0 +1,7 @@
+operator-sdk alpha scorecard \
+--bundle=bundle/ \
+--selector=suite=custom \
+--list=false \
+-o json \
+--wait-time=40s \
+--skip-cleanup=false
