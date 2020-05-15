@@ -77,8 +77,8 @@ func printValidTests() (result scapiv1alpha2.ScorecardTestResult) {
 	result.Suggestions = make([]string, 0)
 
 	str := fmt.Sprintf("Valid tests for this image include: %s, %s",
-		tests.CustomTest1,
-		tests.CustomTest2)
+		tests.CustomTest1Name,
+		tests.CustomTest2Name)
 	result.Errors = append(result.Errors, str)
 	return result
 }

@@ -20,8 +20,8 @@ import (
 )
 
 const (
-	CustomTest1Name = "custom-test-1"
-	CustomTest2Name = "custom-test-2"
+	CustomTest1Name = "customtest1"
+	CustomTest2Name = "customtest2"
 )
 
 // CustomTest1 
