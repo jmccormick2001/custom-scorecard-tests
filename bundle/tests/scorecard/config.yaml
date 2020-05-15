@@ -1,6 +1,6 @@
 tests:
 - name: "customtest1"
-  image: quay.io/jemccorm/custom-scorecard-tests
+  image: quay.io/jemccorm/custom-scorecard-tests:dev
   entrypoint: 
   - custom-scorecard-tests
   - customtest1
@@ -12,7 +12,7 @@ tests:
   entrypoint: 
   - custom-scorecard-tests
   - customtest2
-  image: quay.io/jemccorm/custom-scorecard-tests
+  image: quay.io/jemccorm/custom-scorecard-tests:dev
   labels:
     suite: custom
     test: customtest2
