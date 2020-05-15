@@ -15,17 +15,16 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"log"
 	"os"
-	"bytes"
 
 	"github.com/operator-framework/api/pkg/manifests"
 	"github.com/operator-framework/operator-registry/pkg/registry"
 	"github.com/sirupsen/logrus"
 
-//	scorecardtests "github.com/operator-framework/operator-sdk/internal/scorecard/alpha/tests"
 	"github.com/jmccormick2001/custom-scorecard-tests/internal/tests"
 	scapiv1alpha2 "github.com/operator-framework/operator-sdk/pkg/apis/scorecard/v1alpha2"
 )
@@ -82,8 +81,6 @@ func printValidTests() (result scapiv1alpha2.ScorecardTestResult) {
 	result.Errors = append(result.Errors, str)
 	return result
 }
-
-
 
 // GetBundle parses a Bundle from a given on-disk path returning a bundle
 func GetBundle(bundlePath string) (bundle *registry.Bundle, err error) {

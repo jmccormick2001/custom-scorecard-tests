@@ -32,4 +32,18 @@ config.yaml entries:
 ## Example Execution Command
 
 The *command-example* script shows how to run the
-custom scorecard test using operator-sdk alpha scorecard.
+custom scorecard test using operator-sdk alpha scorecard.  It looks
+like this:
+```
+operator-sdk alpha scorecard \
+--bundle=bundle/ \
+--selector=suite=custom \
+--list=false \
+-o json \
+--wait-time=40s \
+--skip-cleanup=false
+```
+
+Notice that we are using the selector flag to only run the custom
+tests.   The scorecard configuration is found in the *bundle*
+sub-directory.
